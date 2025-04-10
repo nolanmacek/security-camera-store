@@ -1,148 +1,156 @@
-/* Global styles */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
+/* Body and Page Layout */
 body {
-    background-color: #fff; /* White background */
-    color: #333; /* Dark text for readability */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header (Navigation) */
+/* Header Styles */
 header {
-    background-color: #5D2F91; /* Purple background */
-    padding: 10px 0;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #7c4dff; /* Purple */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 24px;
+    text-decoration: none;
     color: white;
 }
 
-header .slider {
-    position: relative;
-    overflow: hidden;
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-header .slide {
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .cart a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 60px; /* Adjust for fixed header */
+}
+
+.slide {
     display: none;
     text-align: center;
 }
 
-header .fade {
-    animation: fade 5s infinite;
+.slide img {
+    width: 100%;
+    height: auto;
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #ffeb3b; /* Yellow */
+    font-weight: bold;
 }
 
-/* Mission Section */
-.mission {
-    background-color: #F1F1F1; /* Light gray background */
-    padding: 50px 0;
+/* Product Grid Styles */
+.products {
+    padding: 80px 20px;
     text-align: center;
 }
 
-.mission h2 {
-    color: #5D2F91; /* Purple color for title */
-    font-size: 2.5em;
+.products h2 {
+    font-size: 32px;
+    color: #7c4dff; /* Purple */
+    margin-bottom: 40px;
 }
 
-.mission p {
-    font-size: 1.2em;
-    color: #666;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-/* Testimonials */
-.testimonials {
-    padding: 50px 0;
-    background-color: #F9F9F9; /* Light gray background */
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     text-align: center;
 }
 
-.testimonials h2 {
-    color: #5D2F91;
-    font-size: 2.5em;
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.testimonial {
-    margin: 20px 0;
+.product-item h3 {
+    color: #7c4dff; /* Purple */
+    font-size: 24px;
+    margin: 10px 0;
 }
 
-.testimonial p {
-    font-size: 1.1em;
-    color: #666;
+.product-item p {
+    font-size: 20px;
+    color: #333;
 }
 
-/* Call to Action Section */
-.cta {
-    background-color: #FFC107; /* Yellow background */
-    padding: 50px 0;
-    text-align: center;
-}
-
-.cta h2 {
-    color: white;
-    font-size: 2.5em;
-}
-
-.cta p {
-    font-size: 1.3em;
-    color: white;
-}
-
-.cta button {
-    background-color: #5D2F91; /* Purple button */
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
+.product-item button {
+    background-color: #ffeb3b; /* Yellow */
+    color: #7c4dff; /* Purple */
     border: none;
-    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.cta button:hover {
-    background-color: #4A2C7A; /* Darker purple for hover effect */
-}
-
-/* Footer (Social Media) */
-footer {
-    background-color: #5D2F91; /* Purple background */
-    padding: 30px 0;
-    text-align: center;
-}
-
-footer h2 {
+.product-item button:hover {
+    background-color: #7c4dff; /* Purple hover */
     color: white;
-    font-size: 2em;
 }
 
-footer .social-media {
-    margin-top: 20px;
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 footer .social-media a {
-    color: white;
-    margin: 0 15px;
-    font-size: 1.2em;
+    color: #ffeb3b; /* Yellow */
     text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 footer .social-media a:hover {
-    color: #FFC107; /* Yellow hover effect */
+    color: #7c4dff; /* Purple hover */
 }

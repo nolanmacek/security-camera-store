@@ -5,58 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Camera Store</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header with Slider -->
+    <!-- Header (Navigation Bar) -->
     <header>
-        <div class="slider">
-            <div class="slide fade">
-                <img src="camera1.jpg" alt="Security Camera 1">
-                <div class="text">Protect Your Home with Our Advanced Cameras</div>
-            </div>
-            <div class="slide fade">
-                <img src="camera2.jpg" alt="Security Camera 2">
-                <div class="text">Secure Your Property with High-Quality Surveillance</div>
-            </div>
+        <div class="logo">
+            <a href="#">Security Camera Store</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#">🛒</a>
         </div>
     </header>
 
-    <!-- Mission Statement Section -->
-    <section class="mission">
-        <h2>Our Mission</h2>
-        <p>We provide top-of-the-line security cameras to protect your home and business. Our mission is to ensure your safety with advanced technology that you can trust.</p>
-    </section>
-
-    <!-- Product Reviews Section -->
-    <section class="testimonials">
-        <h2>Customer Reviews</h2>
-        <div class="testimonial">
-            <p>"These cameras are amazing! Clear footage and easy to set up. Highly recommend!"</p>
-            <p>- John D.</p>
+    <!-- Slider -->
+    <section class="slider">
+        <div class="slide fade">
+            <img src="camera1.jpg" alt="Security Camera 1">
+            <div class="text">Protect Your Home with Our Advanced Cameras</div>
         </div>
-        <div class="testimonial">
-            <p>"I feel safer knowing my property is protected 24/7. Great value for the price!"</p>
-            <p>- Sarah P.</p>
+        <div class="slide fade">
+            <img src="camera2.jpg" alt="Security Camera 2">
+            <div class="text">Secure Your Property with High-Quality Surveillance</div>
         </div>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section class="cta">
-        <h2>Get Yours Today!</h2>
-        <p>Take control of your security with our premium cameras. Buy now and feel the difference!</p>
-        <button onclick="window.location.href='shop.html'">Shop Now</button>
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product Item 1 -->
+            <div class="product-item">
+                <img src="camera1.jpg" alt="Camera 1">
+                <h3>Advanced Camera</h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+            <!-- Product Item 2 -->
+            <div class="product-item">
+                <img src="camera2.jpg" alt="Camera 2">
+                <h3>Outdoor Camera</h3>
+                <p>$249.99</p>
+                <button>Buy Now</button>
+            </div>
+            <!-- More products can go here -->
+        </div>
     </section>
 
-    <!-- Social Media Section -->
+    <!-- Footer -->
     <footer>
-        <h2>Follow Us</h2>
         <div class="social-media">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
+
